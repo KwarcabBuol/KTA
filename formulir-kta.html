@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Formulir Data Pengusul KTA</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      padding: 20px;
+    }
+    h2 {
+      text-align: center;
+    }
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    input[readonly] {
+      background-color: #e9ecef;
+    }
+    button {
+      margin-top: 20px;
+      background-color: #28a745;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      width: 100%;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Formulir Data Pengusul KTA</h2>
+  <form action="https://formspree.io/f/xkgbvzgl" method="POST">
+    <label for="nama">Nama Lengkap:</label>
+    <input type="text" id="nama" name="Nama Lengkap" required>
+
+    <label for="kwarcab">Kwarcab:</label>
+    <input type="text" id="kwarcab" name="Kwarcab" value="Buol" readonly>
+
+    <label for="no_kwarcab">No. Kwarcab:</label>
+    <input type="text" id="no_kwarcab" name="No. Kwarcab" value="07" readonly>
+
+    <label for="jabatan">Jabatan:</label>
+    <input type="text" id="jabatan" name="Jabatan" required>
+
+    <label for="ttl">Tempat, Tanggal Lahir:</label>
+    <input type="text" id="ttl" name="Tempat, Tanggal Lahir" required>
+
+    <label for="agama">Agama:</label>
+    <input type="text" id="agama" name="Agama" required>
+
+    <label for="gol_darah">Golongan Darah:</label>
+    <input type="text" id="gol_darah" name="Golongan Darah" required>
+
+    <label for="alamat">Alamat:</label>
+    <textarea id="alamat" name="Alamat" rows="3" required></textarea>
+
+    <label for="wa">No. WhatsApp:</label>
+    <input type="tel" id="wa" name="No. WhatsApp" required>
+
+    <button type="submit">Kirim Data</button>
+  </form>
+
+</body>
+</html>
